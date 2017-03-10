@@ -1,0 +1,442 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Pluto Music</title>
+		<style type="text/css">
+			body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,button,input,textarea,th,td{margin:0;padding:0}
+			body,button,input,select,textarea,th{color:#8B8B8B;background-color:#FFF;font-size:12px;line-height:1.5em;font-family:Arial,Tahoma,"hiragino sans gb",Helvetica}
+			h1,h2,h3,h4,h5,h6{font-size:100%}
+			li{list-style: none;}
+			a{color:#515151;text-decoration:none}
+			a:hover{color:#333}
+			*{
+				margin: 0;
+				padding: 0;	
+			}
+			body{
+				background-color: #fff;
+			}
+			.header{
+				min-width: 960px;
+				background:#9cc;
+				height: 120px;
+			}
+			.header_top{
+				width: 100%;
+				
+				
+				height: 30px;
+
+			}
+			.navlist li{
+				float:left;
+				margin:0 10px 0 10px;
+			}
+			.navlist{
+				position: relative;
+				width: 960px;
+				margin: 0 auto;
+				line-height: 30px;
+			}
+			.navlist ul{
+				position: absolute;
+				right: 0;
+			}
+			.navlist .login_btn{
+
+			}
+			.header_main{
+				margin: 0 auto;
+				width: 960px;
+				position: relative;
+
+			}
+			.header_main h2{
+				font-family:"Microsoft Yahei";
+				font-size:36px;
+				line-height: 70px;
+			}
+			.header_main .header_logo{
+				position: absolute;
+				left: 20px;
+
+			}
+			.header_main .header_nav{
+				position: absolute;
+				top:40px;
+				right: 200px;
+			}
+			.header_main .header_nav li{
+				float: left;
+				margin: 0 10px;
+				width: 40px;
+				height: 30px;
+				font-size: 12px;
+				text-align: center;
+			}
+
+			.main iframe{
+				min-width: 960px;
+				width: 100%;
+				height: 2000px;
+				border: none;
+			}
+			
+		</style>
+
+		<link rel="stylesheet" type="text/css" href="CSS/player.css">
+		<link rel="stylesheet" type="text/css" href="CSS/frame_only.css">
+		<link rel="stylesheet" type="text/css" href="CSS/main.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="header_top">
+				<div class="navlist">
+					<ul>
+						<li><span>你还没登录，</span><a href="login.html" class="login_btn">马上登录</a></li>
+						
+						<li><a href="register.html">注册</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_main">
+            	<div class="header_logo"><h2><a href="#">Pluto Music</a></h2></div>
+				<div class="header_nav"><ul>
+					<li><a href="#">主页</a></li>
+					<li><a href="#">音乐馆</a></li>
+					<li><a href="#">发现</a></li>
+				</ul></div>
+				
+			</div>
+		</div>
+
+		<div class="main">
+			<!-- <iframe src="main.html"></iframe> -->
+			<div id="iframemain">
+				<div class="main_frame">
+					<div class="layout">
+						<div class="main_container">
+							<div class="songlist">
+								<div>
+									<a href="#" class="user_name">某某</a><span>分享了</span>
+									<h4 class="music_name"><a href="#">心酸-林宥嘉</a></h4>
+								</div>
+								<div class="why_share">
+									<span class="why_1">分享理由:</span>
+									<p class="why_2">我们曾相爱，想到就心酸！！</p>
+								</div>
+								<div class="op_content">
+									<ul>
+										<li><a href="#" class="btn_fav" title="收藏"><i class="icon_fav"></i></a></li>
+										<li><a href="#" class="btn_like" title="喜欢"><i class="icon_like"></i></a></li>
+										<li><a href="#" class="btn_share" title="分享"><i class="icon_share"></i></a></li>
+									</ul>
+								</div>
+								
+								
+							
+								<div class="op_btn">
+									<a href="javascript:addandPlay(0)"  class="op_play" title="播放">播放</a>
+									<a href="javascript:"class="op_add" title="添加" onclick="addToList(0)">添加</a>
+								</div>
+							</div>
+							<div class="songlist">
+								<div>
+									<a href="#" class="user_name">某某</a><span>分享了</span>
+									<h4 class="music_name"><a href="#">泡沫-邓紫棋</a></h4>
+								</div>
+								<div class="why_share">
+									<span class="why_1">分享理由:</span>
+									<p class="why_2">阳光下泡沫是彩色的。</p>
+								</div>
+								<div class="op_content">
+									<ul>
+										<li><a href="#" class="btn_fav" title="收藏"><i class="icon_fav"></i></a></li>
+										<li><a href="#" class="btn_like" title="喜欢"><i class="icon_like"></i></a></li>
+										<li><a href="#" class="btn_share" title="分享"><i class="icon_share"></i></a></li>
+									</ul>
+								</div>
+								
+								
+							
+								<div class="op_btn">
+									<a href="javascript:addandPlay(1)" class="op_play" title="播放">播放</a>
+									<a href="javascript:" class="op_add" title="添加" onclick="addToList(1)">分享</a>
+								</div>
+							</div>
+							<div class="songlist">
+								<div>
+									<a href="#" class="user_name">某某</a><span>分享了</span>
+									<h4 class="music_name"><a href="#">Gentleman-Psy</a></h4>
+								</div>
+								<div class="why_share">
+									<span class="why_1">分享理由:</span>
+									<p class="why_2">Mather father gettleman</p>
+								</div>
+								<div class="op_content">
+									<ul>
+										<li><a href="#" class="btn_fav" title="收藏"><i class="icon_fav"></i></a></li>
+										<li><a href="#" class="btn_like" title="喜欢"><i class="icon_like"></i></a></li>
+										<li><a href="#" class="btn_share" title="分享"><i class="icon_share"></i></a></li>
+									</ul>
+								</div>
+								
+								
+							
+								<div class="op_btn">
+									<a href="javascript:addandPlay(2)" class="op_play" title="播放">播放</a>
+									<a href="javascript:" class="op_add" title="添加" onclick="addToList(2)">分享</a>
+								</div>
+							</div>
+							<div class="songlist">
+								<div>
+									<a href="#" class="user_name">某某</a><span>分享了</span>
+									<h4 class="music_name"><a href="#">Cross Every River-Maria Arredondo</a></h4>
+								</div>
+								<div class="why_share">
+									<span class="why_1">分享理由:</span>
+									<p class="why_2">many thing I should have done,
+									many miles I should have run,
+									many fights I should have won.
+									</p>
+								</div>
+								<div class="op_content">
+									<ul>
+										<li><a href="#" class="btn_fav" title="收藏"><i class="icon_fav"></i></a></li>
+										<li><a href="#" class="btn_like" title="喜欢"><i class="icon_like"></i></a></li>
+										<li><a href="#" class="btn_share" title="分享"><i class="icon_share"></i></a></li>
+									</ul>
+								</div>
+								
+								
+							
+								<div class="op_btn">
+									<a href="javascript:addandPlay(3)"  class="op_play" title="播放">播放</a>
+									<a href="javascript:"class="op_add" title="添加" onclick="addToList(3)">添加</a>
+								</div>
+							</div>
+							<div class="songlist">
+								<div>
+									<a href="#" class="user_name">某某</a><span>分享了</span>
+									<h4 class="music_name"><a href="#">月半小夜曲-李克勤</a></h4>
+								</div>
+								<div class="why_share">
+									<span class="why_1">分享理由:</span>
+									<p class="why_2">但我的心每分每刻仍然被她占有，她似这月儿仍然是不开口。
+									</p>
+								</div>
+								<div class="op_content">
+									<ul>
+										<li><a href="#" class="btn_fav" title="收藏"><i class="icon_fav"></i></a></li>
+										<li><a href="#" class="btn_like" title="喜欢"><i class="icon_like"></i></a></li>
+										<li><a href="#" class="btn_share" title="分享"><i class="icon_share"></i></a></li>
+									</ul>
+								</div>
+								
+								
+							
+								<div class="op_btn">
+									<a href="javascript:addandPlay(4)"  class="op_play" title="播放">播放</a>
+									<a href="javascript:"class="op_add" title="添加" onclick="addToList(4)">添加</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="side_container">
+							<div class="mod_login" id="logintab" style="display:none"></div>
+							<div class="mod_user" id="userInfo" style="display:block">
+								<div class="mod_content">
+									<div class="mod_user_info" id="mod_user_info">
+										<a href="#" class="mod_user_photo">
+										<img src="images/head_image.png"></a>
+										<p class="mod_user_name"><a href="#">夜的第七章</a></p>
+									</div>
+									<ul id="user_summary" class="mod_user_statistic">
+										<li><a href="#"><strong>14</strong><span>歌单</span></a></li>
+										<li><a href="#"><strong>3</strong><span>收听</span></a></li><a href="#">
+										</a><li><a href="#"></a><a href="#"><strong>0</strong><span>听众</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+    		<audio id="audioPlayer"></audio>
+    	</div>
+    	<div id="divMaskPage" class="divMaskPage" style="display:none"></div>
+    	<div id="divdialog" class="divdialog" style="display: none">
+    		<div class="popup_dialog_hd">
+    			<h3></h3>
+    			<a href="" class="popup_dialog_close" onclick="" title="关闭">关闭</a>
+    		</div>
+    		<div class="share_dialog" id="sub_windows">
+			    <h3 class="share2where">分享这首歌到</h3>
+			    <p class="choose_text">选择一种方式，与您的好友一起分享这首歌</p>
+			    <div class="dialog_tips" style="display:none;" id="divpopuphint">
+			    	<p id="divpopupcontent"></p>
+			        <i class="icon_arrow_foot" id="divarrowpos"></i>
+			    </div>
+			    <ul class="share_list">
+			    	<li class="qzone"><a id="toqzone" href="javascript:;" title="QQ空间" onclick="toqzone_onclick(this);" class=""><i class="icon_hidden"></i><span>QQ空间</span></a></li>
+			        <li class="mblog"><a id="tominiblog" href="javascript:;" title="腾讯微博" onclick="tominiblog_onclick(this);MUSIC.event.cancelBubble();" class=""><i class="icon_hidden"></i><span>腾讯微博</span></a></li>
+			        <li class="pengyou"><a id="topengyou" href="javascript:;" title="朋友网" onclick="topengyou_onclick(this);MUSIC.event.cancelBubble();" class=""><i class="icon_hidden"></i><span>朋友网</span></a></li>
+			    </ul>
+			    <div class="text_box" id="text_box">
+			    	<textarea id="like_content" onkeydown="setTimeout(reason_onchange, 100);" onchange="reason_onchange();" onfocus="if(this.value=='说说此刻的心情吧'){this.value='';}" style="word-wrap:break-word;word-break:break-all;" onblur="if(this.value==''){this.value='说说此刻的心情吧';}"></textarea>
+			    </div>
+				<p class="text_count" id="span_words_count"><span>126字</span></p>
+			    <div class="share_btn" id="share_btn">
+			    	<a href="javascript:;" onclick="sumbit_form();" class="btn_confirm">确认</a>
+			        <a href="javascript:;" onclick="top.g_dialog.hide();" class="btn_cancel">取消</a>
+			    </div>
+			</div>
+		</div>
+		<div class="footer">
+			<div></div>
+			<div></div>
+		</div>
+
+		 <!-- 音乐播放器 -->
+    	<div class="m_player" id="divplayer" style="left:0px">
+	    	<div class="m_player_dock" id="divsongframe">
+	    		<div class="music_info" id="divsonginfo">
+	    			<a target="contentFrame" class="album_pic" title="">
+	    				<img src="images/cover_mine_130.jpg" id="album_img" alt="" onerror="this.src='images/cover_mine_130.jpg'">
+	    			</a>
+	    			<div class="music_info_main" id="music_info_main">
+	    				<p class="music_name" title="懂你的音乐">懂你的音乐</p>
+	    				<p class="singer_name" title="Pluto Music">Pluto Music</p>
+	    				<p class="play_date" id="ptime"></p>
+	    				<p class="music_op" style="display:none;">
+	    					<a><strong class="btn_like" title="暂不提供此歌曲服务" onclick="MUSIC.event.cancelBubble();" name="myfav_" mid="">
+	    						<span>我喜欢</span>
+	    					</strong></a>
+	    					<a><strong class="btn_share" title="暂不提供此歌曲服务" onclick="MUSIC.event.cancelBubble();"><span>分享</span></strong></a>
+	    				</p>
+	    			</div>
+	    		</div>
+	    		<div class="bar_op">
+	    			<a><strong title="上一首([)" class="prev_bt" onclick="prevMusic()"></strong></a>
+	    			<a><strong title="播放(P)" class="play_bt" onclick="play()" id="btnplay"></strong></a>
+	    			<a><strong class="next_bt" title="下一首" onclick="nextMusic()"></strong></a>
+	    			<a><strong class="cycle_bt" id="btnPlayway" id="btnPlayway" onclick="setPlayMode()" title="列表循环"><span>列表循环</span></strong></a>
+	    			<p class="volume" title="音量调节">
+	    				<a><span class="volume_icon" id="spanmute" title="点击设为静音(M)" onclick="setMute()"></span></a>
+	    				<span class="volume_regulate" id="spanvolume" onclick="setVolume(event)">
+	    					<span class="volume_bar" id="spanvolumebar" style="width:100%"></span>
+	    					<span class="volume_op" id="spanvolumeop" style="left:100%"></span>
+	    				</span>
+	    			</p>
+	    		</div>
+	    		<p class="playbar_cp_select" id="divselect" style="display: none;">
+	    			<a><strong title="顺序播放" class="ordered_bt" onclick="realSetPlayWay(2);"><span>顺序播放</span></strong></a>
+	    			<a><strong title="随机播放" class="unordered_bt" onclick="realSetPlayWay(3);"><span>随机播放</span></strong></a>
+	    			<a><strong title="单曲循环" class="cycle_single_bt" onclick="realSetPlayWay(4);"><span>单曲循环</span></strong></a>
+	    			<a><strong title="列表循环" class="cycle_bt" onclick="realSetPlayWay(1);"><span>列表循环</span></strong></a>
+	    		</p>
+	    		<p class="player_bar" onmouseout="notShowTime()" onmousemove="showTime(event)" onclick="TimeSelect(event)">
+	    			<span class="player_bg_bar" id="spanplayer_bgbar"></span>
+	    			<span class="download_bar" id="downloadbar" style="width:100%"></span>
+	    			<span class="play_current_bar" style="width:0%" id="spanplaybar"></span>
+	    			<span class="progress_op" style="left:0%" id="spanprogress_op"></span>
+	    		</p>
+	    		<div class="time_show" style="left:305px;bottom:8px;display:none;">
+	    			<p id="time_show">2:04</p>
+	    			<span class="icon_arrow_foot">
+	    				<i class="foot_border"></i>
+	    				<i class="foot_arrow"></i>
+	    			</span>
+	    		</div>
+	    		<span class="active_tip" id="spanaddtips" style="top:0px;display:block;"></span>
+	    		<span class="open_list" title="展开播放列表" style="display:block" id="spansongnum1" onclick="listFolded()">
+	    			<span>0</span>
+	    		</span>
+	    		<span title="显示歌词" class="btn_lyrics_disabled" id="btnlrc" onclick="lycFolded()">歌词（L）</span>
+	    	</div>
+	    	<button type="button" class="folded_bt" title="点击收起" id="btnfold" onclick="folded()"><span>点击收起/展开</span></button>
+	    	<div class="play_list_frame" id="divplayframe" style="display:none;opacity:1;">
+	    		<div class="play_list_title">
+	    			<ul id="tab_container" style="width:270px">
+	    				<li id="playlist_tab" class="current">
+	    					<a href="#">播放列表</a>
+	    					<li></li>
+	    				</li>
+	    				<li id="fm_tab" style="display:none">
+	    					
+	    				</li>
+	    			</ul>
+	    			<span id="clear_list" class="clear_list" onclick="clearList()">清空列表</span>
+	    			<strong title="收起播放列表" class="close_list" id="btnclose_list" onclick="listFolded()"></strong>
+	    		</div>
+	    		<div class="play_list" id="divlistmain">
+	    			<div class="play_list_point" id="divnulllist" style="display:block">
+	    				<div>
+	    					<h4>你当前还未添加任何歌曲</h4>
+	    					<p>您可以：</p>
+	    					<p>在<a href="#">首页</a>中试听我们的歌曲</p>
+	    					<p>在<a href="#">乐库</a>中查找你喜欢的歌曲</p>
+	    				</div>
+	    			</div>
+	    			<!-- <div class="play_list_main" id="divplaylist" style="display: none; left: 0px; top: 0px;">
+						
+						<div class="single_list" id="divsonglist" dirid="0">
+							<ul></ul>
+						</div>
+						<div id="divalbumlist" style="display:none;">
+						</div>
+					</div> -->
+					<div class="play_list_main" id="divplaylist" style="display: none; left: 0px; top: 0px;">
+				<!-- 播放列表_S-->
+				<div class="single_list" id="divsonglist" dirid="0">
+					<ul></ul>
+				</div>
+				<div id="divalbumlist" style="display:none;">
+				</div>
+			</div>
+					<div class="play_list_scroll" style="top: 0px; display: none;">
+						<span id="spanbar" class="play_list_scrolling" style="height: 151px; left: 3px; top: 0px; display: none;"></span>
+					</div>
+	    		</div>
+	    	</div>
+	    	<!-- 歌词内容 -->
+	    	<div class="y_player_lyrics" id="player_lyrics_pannel" style="display:none">
+	    		<div class="lyrics_text" id="qrc_ctn"></div>
+	    		<div class="lyrics_bg"></div>
+	    		<div class="close_lyrics" id="closelrcpannel" onclick="lycFolded()"></div>
+	    	</div>
+	    	<div class="single_radio_tip" id="single_radio_tip" style="display:none">
+	    		<a href="javascript:;" class="close_tips"></a>
+    		</div>
+    	</div>
+    	<div>
+    		<audio width="0" height="0" id="h5audio_media" autoplay="false" src=""></audio>
+    	</div>
+    	
+    	
+    	<script type="text/javascript" src="JS/player.js"></script>
+    	<script type="text/javascript">
+   //  		var divsonglist=document.getElementById("divsonglist");
+			// var list=divsonglist.getElementsByTagName("li");
+			// var listLen=list.length;
+			// for(var i=0;i<listLen;i++){
+			// 	list[i].addEventListener("mouseover",function(){
+			// 		this.className="play_hover"
+			// 		},false);
+			// 	list[i].addEventListener("mouseout",function(){
+			// 		this.className="";
+			// 	},false);
+			// 	// var divlist_cp=list[i].getElementById("divlist_cp");
+			// 	// var btnstrong=divlist_cp.getElementsByTagName("strong");
+			// 	// var btnstrongLen=btnstrong.length;
+			// 	// for(var j=0;j<btnstrong;j++){
+			// 	// 	btnstrong[i].addEventListener("mouseover",function(){
+			// 	// 		this.className+=" "
+			// 	// 	})
+			// 	// }
+			// }
+    	</script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+
+.foot{text-align:center;line-height:24px;margin:30px auto 10px;padding-top:10px;min-width:960px;background:#f7f7f7}
+.follow_on{overflow:hidden;width:950px;margin:0 auto;padding:20px 0 50px;font-family:tahoma}
+.follow_on .qq_weibo{float:left;width:206px;height:23px;border-right:solid 1px #dedede}
+.follow_on .sina_weibo{float:left;width:206px;height:23px;border-right:solid 1px #dedede}
+.follow_on .links{float:left;width:406px;height:23px}
+.follow_on .links a{margin:0 8px}
+.btn_qq_weibo{display:inline-block;width:62px;height:22px;line-height:22px;overflow:hidden;background:url(//imgcache.gtimg.cn/mediastyle/musicprotal/img/sns_fllow.png?d=20140815164614) no-repeat 0 0;margin:0 0 0 15px;text-indent:16px;color:#1f83be;vertical-align:top;*vertical-align:1px;*display:inline;*zoom:1;*line-height:23px;_vertical-align:4px}
+.btn_sina_weibo{display:inline-block;width:62px;height:22px;line-height:22px;overflow:hidden;margin:0 0 0 15px;vertical-align:top;*vertical-align:-3px;*display:inline;*zoom:1;*line-height:23px;_vertical-align:2px}
+.followed{color:#8b8b8b}
+.cooperation_platform{float:left;width:126px;height:23px;border-right:solid 1px #dedede}
+.popup_download_qrcode{position:fixed;_position:absolute;right:20px;bottom:45%;z-index:3;width:158px;height:246px;border:solid #DDD 1px;background:#FFF url(//imgcache.gtimg.cn/mediastyle/musicprotal/img/bg_popup_download_qrcode.jpg?d=20140815164614) no-repeat}
+.popup_download_qrcode .popup_dialog_close{position:absolute;top:0;right:0;z-index:3;width:20px;height:20px;text-indent:-999em;overflow:hidden;background:url(//imgcache.gtimg.cn/mediastyle/musicprotal/img/icon_sprite.png?d=20140815164614) no-repeat -70px -70px}
+.popup_download_qrcode .popup_dialog_close:hover{background:url(//imgcache.gtimg.cn/mediastyle/musicprotal/img/icon_sprite.png?d=20140815164614) -90px -70px}
+.popup_download_qrcode img{display:block;margin:92px auto 0}
+.popup_download_qrcode p{text-align:center;color:#515151}
+.visitor_cp{background-color:#FFF;width:47px;height:106px;position:fixed;_position:absolute;right:20px;bottom:30%;border-radius:5px;box-shadow:0 0 2px #6E6E6E}
+.visitor_cp button{background:url(//imgcache.gtimg.cn/mediastyle/musicprotal/img/frame_bg.png?d=20140815164614) no-repeat;display:block;text-indent:999em;line-height:9999px;width:37px;margin:5px;border:0;overflow:hidden;float:left}
+.visitor_cp .get_top{background-position:-896px -91px;height:22px}
+.visitor_cp .get_feedback{background-position:-896px -113px;height:32px}
+.visitor_cp .get_bottom{background-position:-896px -147px;height:22px}
+.visitor_cp .get_top:hover{background-position:-934px -91px}
+.visitor_cp .get_feedback:hover{background-position:-934px -113px}
+.visitor_cp .get_bottom:hover{background-position:-934px -147px}
+.iphone_banner{width:960px;height:138px;margin:0 auto;position:relative}
+.iphone_banner .close_banner{display:block;height:138px;width:120px;position:absolute;right:0;top:0}
+.iphone_banner .close_banner i{background:rgba(55,86,16,1);display:block;width:54px;height:54px;position:absolute;right:28px;top:40px;border-radius:36px}
+.iphone_banner .close_banner i::before,.iphone_banner .close_banner i::after{display:block;content:"\20";overflow:hidden;width:6px;height:32px;background:#fff;position:absolute;left:24px;top:11px}
+.iphone_banner .close_banner i::before{-webkit-transform:rotate(45deg)}
+.iphone_banner .close_banner i::after{-webkit-transform:rotate(-45deg)}
+@media screen and (-webkit-min-device-pixel-ratio:1.5){.logined .btn_open_vip,.navigation li a,.frame_search,.search_focus,.visitor_cp button{background-image:url(//imgcache.gtimg.cn/mediastyle/musicprotal/img/frame_bg@2x.png?d=20140815164614);background-size:1000px 200px;background-color:#fff}
+.navigation li a{position:relative;overflow:hidden}
+.navigation li span{position:absolute;left:-1px;right:-1px}
+.popup_download_qrcode .popup_dialog_close,.popup_download_qrcode .popup_dialog_close:hover{background-image:url(//imgcache.gtimg.cn/mediastyle/musicprotal/img/icon_sprite@2x.png?d=20140815164614);background-size:199px 498px}
+.main_top .frame_logo{background-image:url(//imgcache.gtimg.cn/mediastyle/musicprotal/img/frame_logo@2x.png?d=20140815164614);background-size:295px 113px}}
+#CssGaga{content:"140815164614,yug,326"}/*  |xGv00|8d45b98aae0e246e904df990f54aa700 */
